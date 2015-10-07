@@ -1,0 +1,5 @@
+hpc <- read.csv("~/R/hpc.txt", sep=";")
+#View(hpc)
+png("plot1.png", width = 480, height = 480, units = "px")
+hist(hpc$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+dev.off()
